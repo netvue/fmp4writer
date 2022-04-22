@@ -1,42 +1,19 @@
-#--------------------------------Output------------------------------
-# OUTTYPE: 0-exe, 1-dll, 2-static
-#--------------------------------------------------------------------
-OUTTYPE = 2
-OUTFILE = libmov.a
-
-#-------------------------------Include------------------------------
-#
-# INCLUDES = $(addprefix -I,$(INCLUDES)) # add -I prefix
-#--------------------------------------------------------------------
-INCLUDES = . ./include
-
-#-------------------------------Source-------------------------------
-#
-#--------------------------------------------------------------------
-SOURCE_PATHS = source
-SOURCE_FILES = $(foreach dir,$(SOURCE_PATHS),$(wildcard $(dir)/*.cpp))
-SOURCE_FILES += $(foreach dir,$(SOURCE_PATHS),$(wildcard $(dir)/*.c))
-
-#-----------------------------Library--------------------------------
-#
-# LIBPATHS = $(addprefix -L,$(LIBPATHS)) # add -L prefix
-#--------------------------------------------------------------------
-LIBPATHS =
-ifdef RELEASE
-# relase library path
-LIBPATHS += 
+ifdef PLATFORM
+	CROSS:=$(PLATFORM)-
 else
-LIBPATHS +=
+	CROSS:=
+	PLATFORM:=linux
 endif
 
-LIBS =
+ifeq ($(RELEASE),1)
+	BUILD:=release
+else
+	BUILD:=debug
+endif
 
-STATIC_LIBS =
-
-#-----------------------------DEFINES--------------------------------
-#
-# DEFINES := $(addprefix -D,$(DEFINES)) # add -L prefix
-#--------------------------------------------------------------------
-DEFINES =
-
-include ../gcc.mk
+all:
+	$(MAKE) -C libmov
+	
+clean:
+	$(MAKE) -C libmov clean
+	
