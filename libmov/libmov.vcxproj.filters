@@ -48,6 +48,24 @@
     <ClInclude Include="include\mp4-writer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="include\mpeg4-aac.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mpeg4-avc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mpeg4-bits.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mpeg4-hevc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mov-file-buffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mov-memory-buffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\mov-reader.c">
@@ -165,6 +183,33 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="source\fmp4-reader.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\hevc-annexbtomp4.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\hevc-mp4toannexb.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\mov-file-buffer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\mpeg4-aac-asc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\mpeg4-aac.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\mpeg4-annexbtomp4.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\mpeg4-avc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\mpeg4-hevc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\mpeg4-mp4toannexb.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

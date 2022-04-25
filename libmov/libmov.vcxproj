@@ -28,6 +28,12 @@
     <ClInclude Include="include\mov-writer.h" />
     <ClInclude Include="include\mov-buffer.h" />
     <ClInclude Include="include\mp4-writer.h" />
+    <ClInclude Include="include\mpeg4-aac.h" />
+    <ClInclude Include="include\mpeg4-avc.h" />
+    <ClInclude Include="include\mpeg4-bits.h" />
+    <ClInclude Include="include\mpeg4-hevc.h" />
+    <ClInclude Include="include\mov-file-buffer.h" />
+    <ClInclude Include="include\mov-memory-buffer.h" />
     <ClInclude Include="source\mov-internal.h" />
     <ClInclude Include="source\mov-ioutil.h" />
   </ItemGroup>
@@ -71,6 +77,15 @@
     <ClCompile Include="source\mov-tx3g.c" />
     <ClCompile Include="source\mov-vpcc.c" />
     <ClCompile Include="source\mov-writer.c" />
+    <ClCompile Include="source\hevc-annexbtomp4.c" />
+    <ClCompile Include="source\hevc-mp4toannexb.c" />
+    <ClCompile Include="source\mov-file-buffer.c" />
+    <ClCompile Include="source\mpeg4-aac-asc.c" />
+    <ClCompile Include="source\mpeg4-aac.c" />
+    <ClCompile Include="source\mpeg4-annexbtomp4.c" />
+    <ClCompile Include="source\mpeg4-avc.c" />
+    <ClCompile Include="source\mpeg4-hevc.c" />
+    <ClCompile Include="source\mpeg4-mp4toannexb.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{D5106098-7B37-4DE0-B8FB-233BBABC2D72}</ProjectGuid>
